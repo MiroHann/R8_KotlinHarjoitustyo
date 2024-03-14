@@ -10,16 +10,20 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.apiparser.ui.theme.APIParserTheme
+import com.google.android.material.internal.ContextUtils.getActivity
 
 
 class MainActivity : ComponentActivity() {
+    var Nameofrecepie = "Makkara"
+    var Contentofrecepie = "This is a placeholder text!"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mainmenu_layout)
         findViewById<Button>(R.id.buttonWindow)
             .setOnClickListener {
-                Log.d("BUTTONS", "Window should change")
                 val intent = Intent(this, Recipe::class.java)
+                intent.putExtra("TitleText", Nameofrecepie)
+                intent.putExtra("RecipeText", Contentofrecepie)
                 startActivity(intent)
             }
     }

@@ -2,12 +2,50 @@ package com.example.apiparser
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 
 class Recipe : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.recipe)
+
+        val intentValues = intent.getStringExtra("TitleText")
+        val recipeText = intent.getStringExtra("RecipeText").toString()
+        setContent {
+            title = intentValues
+            MaterialTheme{
+                    RecipeText(content = recipeText)
+            }
+        }
+    }
+    @Composable
+    fun RecipeText(content: String, modifier: Modifier = Modifier) {
+        Column(
+            modifier = modifier
+                .fillMaxHeight()
+                .padding(top = 32.dp)
+
+        ) {
+            Text(
+                text = content,
+                modifier = modifier.fillMaxWidth(),
+                textAlign = TextAlign.Center,
+            )
+        }
     }
 }
