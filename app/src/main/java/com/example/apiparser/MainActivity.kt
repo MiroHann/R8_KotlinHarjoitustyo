@@ -7,6 +7,8 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -22,15 +24,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Button
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
 import com.example.apiparser.ui.theme.APIParserTheme
+
 
 
 class MainActivity : ComponentActivity() {
@@ -49,18 +56,24 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
+@Preview
 @Composable
 fun RecipeList(modifier: Modifier = Modifier) {
+
+    val (cuisineType, setCuisineType) = remember { mutableStateOf("Nordic") }
+
     val service = remember { createRecipeService() }
     val recipes = remember { mutableStateListOf<Recipe>() }
 
-    LaunchedEffect(Unit) {
+    LaunchedEffect(cuisineType) {
         try {
             val response = service.getRecipes(
                 appId = "7a7668fb",
-                appKey = "5dedd41ca0ac7b45881b37db8ae94423"
+                appKey = "5dedd41ca0ac7b45881b37db8ae94423",
+                cuisineType = cuisineType,
+                imageSize = "REGULAR"
             )
+            recipes.clear()
             recipes.addAll(response.hits.map { it.recipe })
         } catch (e: Exception) {
             Log.e("API_ERROR", "Failed to fetch recipes", e)
@@ -97,4 +110,58 @@ fun RecipeList(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(8.dp))
         }
     }
-}
+    Row( modifier = modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.Bottom
+    ) {
+        Button(
+            onClick = { setCuisineType("British") },
+            modifier = Modifier.weight(1f),
+            contentPadding = PaddingValues(0.dp),
+
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.british),
+                contentDescription = "Button Image",
+                modifier = Modifier
+                    .size(width = 100.dp, height = 45.dp)
+            )
+        }
+        Button(
+            onClick = { setCuisineType("American") },
+            modifier = Modifier.weight(1f),
+            contentPadding = PaddingValues(0.dp),
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.america),
+                contentDescription = "Button Image",
+                modifier = Modifier
+                    .size(width = 100.dp, height = 45.dp)
+            )
+        }
+        Button(
+            onClick = { setCuisineType("Mexican") },
+            modifier = Modifier.weight(1f),
+            contentPadding = PaddingValues(0.dp),
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.mexico),
+                contentDescription = "Button Image",
+                modifier = Modifier
+                    .size(width = 100.dp, height = 45.dp)
+            )
+        }
+        Button(
+            onClick = { setCuisineType("Japanese") },
+            modifier = Modifier.weight(1f),
+            contentPadding = PaddingValues(0.dp),
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.japan),
+                contentDescription = "Button Image",
+                modifier = Modifier
+                    .size(width = 100.dp, height = 45.dp)
+            )
+        }
+
+        }
+    }
