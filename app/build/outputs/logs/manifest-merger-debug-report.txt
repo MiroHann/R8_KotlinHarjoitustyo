@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.compose.material3:material3:1.1.1] C:\Users\aatum\.gradle\caches\transforms-3\97b5f65a1b4ff7e43bfb8ef22d97431a\transformed\material3-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [io.coil-kt:coil-compose:1.4.0] C:\Users\aatum\.gradle\caches\transforms-3\928e681e21b9659f071bd2220a2e9a1b\transformed\coil-compose-1.4.0\AndroidManifest.xml:2:1-9:12
 MERGED from [io.coil-kt:coil-compose-base:1.4.0] C:\Users\aatum\.gradle\caches\transforms-3\cd2e4711bc97680e90289a8a21b10c36\transformed\coil-compose-base-1.4.0\AndroidManifest.xml:2:1-9:12
@@ -67,9 +67,13 @@ MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\aatum\.gradle\caches\trans
 		INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:5:5-26:19
-INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:5:5-26:19
+ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:7:5-28:19
+INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:7:5-28:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\aatum\.gradle\caches\transforms-3\5d4da7cbaff1761cee043b0ed09c1b92\transformed\ui-test-manifest-1.5.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.5.0] C:\Users\aatum\.gradle\caches\transforms-3\5d4da7cbaff1761cee043b0ed09c1b92\transformed\ui-test-manifest-1.5.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.5.0] C:\Users\aatum\.gradle\caches\transforms-3\275b553759c02b2efefe0b0514de9884\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
@@ -91,43 +95,43 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\aatum\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\aatum\.gradle\caches\transforms-3\7e0de00efec8260dc761d11f7167e95b\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:12:9-41
 	android:fullBackupContent
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:13:9-54
 	tools:targetApi
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:16:9-29
 	android:icon
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:13:9-47
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:15:9-47
 	android:dataExtractionRules
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:9:9-65
 activity#com.example.apiparser.MainActivity
-ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:15:9-25:20
+ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:17:9-27:20
 	android:label
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:20:13-45
 	android:exported
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:19:13-36
 	android:theme
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:19:13-51
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:21:13-51
 	android:name
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:16:13-41
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:18:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\KouluJutut\KotlinProjekti\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml
