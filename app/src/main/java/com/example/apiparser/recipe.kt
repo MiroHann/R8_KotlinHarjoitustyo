@@ -21,6 +21,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import okhttp3.OkHttpClient
+import okhttp3.Request
 import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 class Recipe : AppCompatActivity() {
@@ -28,7 +30,6 @@ class Recipe : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         val intentValues = intent.getStringExtra("TitleText")
         val recipeText = intent.getStringExtra("RecipeText").toString()
         setContent {
@@ -48,8 +49,12 @@ class Recipe : AppCompatActivity() {
             horizontalAlignment = Alignment.CenterHorizontally
 
         ) {
+            Text(
+                text = "Header",
+                modifier = modifier.fillMaxWidth().padding(top = 62.dp),
+                textAlign = TextAlign.Center,
+            )
             AsyncImage(model = "https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png", contentDescription = "Placeholder")
-            
             Text(
                 text = content,
                 modifier = modifier.fillMaxWidth().padding(top = 62.dp),
