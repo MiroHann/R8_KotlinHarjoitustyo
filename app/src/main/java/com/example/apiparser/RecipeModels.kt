@@ -7,9 +7,6 @@ import java.lang.reflect.Array
 data class RecipeResponse(
     val hits: List<RecipeHit>
 )
-data class Ingredientlist(
-    val ingredients: String
-)
 
 data class RecipeHit(
     val recipe: Recipe,
