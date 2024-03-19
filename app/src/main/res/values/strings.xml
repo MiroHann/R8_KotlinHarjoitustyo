@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">APIParser</string>
+    <string name="pressme">Pressme</string>
 </resources>

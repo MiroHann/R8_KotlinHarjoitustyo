@@ -1,6 +1,11 @@
 package com.example.apiparser
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import androidx.activity.ComponentActivity
+import okhttp3.OkHttpClient
+import okhttp3.Request
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -37,10 +42,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
 import com.example.apiparser.ui.theme.APIParserTheme
-
-
-
 class MainActivity : ComponentActivity() {
+    var Nameofrecepie = "Makkara"
+    var Contentofrecepie = "Makkara soppa, 1 Makkara 2 Keittoa 3 Pippuri. Keitä, Makkara ja Syö! (Väliaikainen teksti)"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -52,10 +56,8 @@ class MainActivity : ComponentActivity() {
                     RecipeList()
                 }
             }
-        }
     }
 }
-
 @Preview
 @Composable
 fun RecipeList(modifier: Modifier = Modifier) {
