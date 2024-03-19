@@ -7,6 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -24,20 +25,34 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Button
+import androidx.compose.material3.Divider
+import androidx.compose.material3.DrawerValue
+import androidx.compose.material3.ExtendedFloatingActionButton
+import androidx.compose.material3.FabPosition
+import androidx.compose.material3.Icon
+import androidx.compose.material3.ModalDrawerSheet
+import androidx.compose.material3.ModalNavigationDrawer
+import androidx.compose.material3.NavigationDrawerItem
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
 import com.example.apiparser.ui.theme.APIParserTheme
-
+import kotlinx.coroutines.launch
 
 
 class MainActivity : ComponentActivity() {
@@ -49,16 +64,19 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    RecipeList()
+                    //RecipeList()
+                    NavDrawer()
                 }
             }
         }
     }
 }
 
-@Preview
 @Composable
-fun RecipeList(modifier: Modifier = Modifier) {
+fun RecipeList(
+    modifier: Modifier = Modifier,
+    contentPadding: PaddingValues
+) {
 
     val (cuisineType, setCuisineType) = remember { mutableStateOf("Nordic") }
 
@@ -82,6 +100,7 @@ fun RecipeList(modifier: Modifier = Modifier) {
 
     LazyColumn(
         modifier = modifier.fillMaxSize(),
+        contentPadding = contentPadding,
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -165,3 +184,51 @@ fun RecipeList(modifier: Modifier = Modifier) {
 
         }
     }
+
+
+@Composable
+@Preview
+fun NavDrawer(modifier: Modifier = Modifier) {
+    val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
+    val scope = rememberCoroutineScope()
+    ModalNavigationDrawer(
+        drawerState = drawerState,
+        drawerContent = {
+            ModalDrawerSheet {
+                Column ( verticalArrangement = Arrangement.Center ) {
+                    NavigationDrawerItem(
+                        label = { Text(text = "Frontpage", textAlign = TextAlign.Center) },
+                        selected = false,
+                        onClick = { /*TODO*/ },
+                    )
+                    Divider()
+                    NavigationDrawerItem(
+                        label = { Text(text = "Saved", textAlign = TextAlign.Center)  },
+                        selected = false,
+                        onClick = { /*TODO*/ }
+                    )
+                }
+            }
+        },
+    ) {
+        Scaffold(
+            floatingActionButton = {
+                ExtendedFloatingActionButton(
+                    text = { Text("Show drawer") },
+                    icon = { Icon(Icons.Filled.Add, contentDescription = "") },
+                    onClick = {
+                        scope.launch {
+                            drawerState.apply {
+                                if (isClosed) open() else close()
+                            }
+                        }
+                    }
+                )
+            },
+            floatingActionButtonPosition = FabPosition.End, // Positioning the FAB in the top right corner
+        ) { contentPadding ->
+            // Screen content
+            RecipeList(modifier = modifier, contentPadding = contentPadding)
+        }
+    }
+}
