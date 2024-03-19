@@ -1,9 +1,9 @@
-#Mon Mar 18 16:23:32 EET 2024
-base.0=C\:\\KouluJutut\\KotlinProjekti\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\KouluJutut\\KotlinProjekti\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\KouluJutut\\KotlinProjekti\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.3=C\:\\KouluJutut\\KotlinProjekti\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.4=C\:\\KouluJutut\\KotlinProjekti\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Tue Mar 19 20:24:56 EET 2024
+base.0=C\:\\Users\\Omistaja\\Documents\\Kotlin Project\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\Omistaja\\Documents\\Kotlin Project\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\Omistaja\\Documents\\Kotlin Project\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.3=C\:\\Users\\Omistaja\\Documents\\Kotlin Project\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.4=C\:\\Users\\Omistaja\\Documents\\Kotlin Project\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=15/classes.dex
