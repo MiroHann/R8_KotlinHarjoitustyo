@@ -46,10 +46,6 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 class MainActivity : ComponentActivity() {
-    var Nameofrecepie = "Makkara"
-    var Contentofrecepie =
-        "Makkara soppa, 1 Makkara 2 Keittoa 3 Pippuri. Keitä, Makkara ja Syö! (Väliaikainen teksti)"
-    var image = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -94,7 +90,6 @@ class MainActivity : ComponentActivity() {
                 )
                 recipes.clear()
                 recipes.addAll(response.hits.map { it.recipe })
-                println(recipes[1])
             } catch (e: Exception) {
                 Log.e("API_ERROR", "Failed to fetch recipes", e)
             }
