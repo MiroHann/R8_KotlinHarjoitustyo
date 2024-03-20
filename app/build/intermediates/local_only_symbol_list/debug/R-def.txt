@@ -13,9 +13,14 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable japan
 drawable mexico
+id buttonWindow
+id textView
+layout mainmenu_layout
+layout recipe
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string pressme
 style Theme.APIParser
 xml backup_rules
 xml data_extraction_rules

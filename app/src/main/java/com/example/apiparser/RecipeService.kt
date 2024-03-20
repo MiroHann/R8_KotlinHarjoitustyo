@@ -13,7 +13,7 @@ interface RecipeService {
         @Query("app_id") appId: String,
         @Query("app_key") appKey: String,
         @Query("cuisineType") cuisineType: String,
-        @Query("imageSize") imageSize: String
+        @Query("imageSize") imageSize: String,
     ): RecipeResponse
 }
 
