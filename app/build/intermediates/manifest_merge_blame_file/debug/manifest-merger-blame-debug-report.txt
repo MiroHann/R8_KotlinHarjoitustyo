@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-11-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:4:5-79
-11-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:4:22-76
+11-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:4:5-79
+11-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:4:22-76
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:5:5-67
-12-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:5:22-64
+12-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:5:5-67
+12-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:5:22-64
 13
 14    <permission
 14-->[androidx.core:core:1.12.0] C:\Users\Omistaja\.gradle\caches\transforms-3\7e0de00efec8260dc761d11f7167e95b\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
@@ -27,55 +27,55 @@
 18-->[androidx.core:core:1.12.0] C:\Users\Omistaja\.gradle\caches\transforms-3\7e0de00efec8260dc761d11f7167e95b\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:6:5-32:19
+20-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:6:5-32:19
 21        android:allowBackup="true"
-21-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:7:9-35
+21-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:7:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.12.0] C:\Users\Omistaja\.gradle\caches\transforms-3\7e0de00efec8260dc761d11f7167e95b\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:8:9-65
+23-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:8:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:9:9-54
+26-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:9:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:10:9-43
+27-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:10:9-43
 28        android:label="@string/app_name"
-28-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:11:9-41
+28-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:11:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:12:9-54
+29-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:12:9-54
 30        android:supportsRtl="true"
-30-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:13:9-35
+30-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:13:9-35
 31        android:testOnly="true"
 32        android:theme="@style/Theme.APIParser" >
-32-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:14:9-47
+32-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:14:9-47
 33        <activity
-33-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:16:9-20:15
+33-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:16:9-20:15
 34            android:name="com.example.apiparser.RecipePage"
-34-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:17:13-39
+34-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:17:13-39
 35            android:exported="false"
-35-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:18:13-37
+35-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:18:13-37
 36            android:theme="@style/Theme.AppCompat.Light" />
-36-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:19:13-57
+36-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:19:13-57
 37        <activity
-37-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:21:9-31:20
+37-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:21:9-31:20
 38            android:name="com.example.apiparser.MainActivity"
-38-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:22:13-41
+38-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:22:13-41
 39            android:exported="true"
-39-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:23:13-36
+39-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:23:13-36
 40            android:label="@string/app_name"
-40-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:24:13-45
+40-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:24:13-45
 41            android:theme="@style/Theme.APIParser" >
-41-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:25:13-51
+41-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:25:13-51
 42            <intent-filter>
-42-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:26:13-30:29
+42-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:26:13-30:29
 43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:27:17-69
-43-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:27:25-66
+43-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:27:17-69
+43-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:27:25-66
 44
 45                <category android:name="android.intent.category.LAUNCHER" />
-45-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:29:17-77
-45-->C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:29:27-74
+45-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:29:17-77
+45-->C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\AndroidManifest.xml:29:27-74
 46            </intent-filter>
 47        </activity>
 48        <activity

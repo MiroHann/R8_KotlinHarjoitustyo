@@ -6384,6 +6384,57 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\Temp\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "293,57,105,153,201,247,336",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "330,99,147,195,241,287,373"
+                    },
+                    "to": {
+                        "startLines": "640,947,948,949,960,961,964",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "32798,55656,55703,55750,56494,56539,56705",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "32835,55698,55745,55792,56534,56579,56742"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\Temp\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "17,65",
+                        "endColumns": "46,43",
+                        "endOffsets": "59,104"
+                    },
+                    "to": {
+                        "startLines": "1982,2176",
+                        "startColumns": "4,4",
+                        "startOffsets": "131128,154319",
+                        "endColumns": "46,43",
+                        "endOffsets": "131170,154358"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\Temp\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "86",
+                        "endOffsets": "139"
+                    },
+                    "to": {
+                        "startLines": "6427",
+                        "startColumns": "4",
+                        "startOffsets": "449194",
+                        "endColumns": "85",
+                        "endOffsets": "449275"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\cb3673b3839b0aab416c9e5bde28ae2e\\transformed\\coordinatorlayout-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,6,16",
@@ -6600,23 +6651,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "86",
-                        "endOffsets": "139"
-                    },
-                    "to": {
-                        "startLines": "6427",
-                        "startColumns": "4",
-                        "startOffsets": "449194",
-                        "endColumns": "85",
-                        "endOffsets": "449275"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\c8182d16d4687a5d99f0eaa3a9833899\\transformed\\activity-1.8.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3",
@@ -6631,23 +6665,6 @@
                         "startOffsets": "121992,124062",
                         "endColumns": "41,59",
                         "endOffsets": "122029,124117"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "17,65",
-                        "endColumns": "46,43",
-                        "endOffsets": "59,104"
-                    },
-                    "to": {
-                        "startLines": "1982,2176",
-                        "startColumns": "4,4",
-                        "startOffsets": "131128,154319",
-                        "endColumns": "46,43",
-                        "endOffsets": "131170,154358"
                     }
                 },
                 {
@@ -6667,23 +6684,6 @@
                         "endLines": "35,651,652,653,654,1047,1048,1049,2262,5607,5610,5613,10245",
                         "endColumns": "51,60,61,61,63,58,56,53,12,12,12,12,24",
                         "endOffsets": "1687,33668,33730,33792,33856,62315,62372,62426,160440,393881,394007,394135,676459"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "7,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "293,57,105,153,201,247,336",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "330,99,147,195,241,287,373"
-                    },
-                    "to": {
-                        "startLines": "640,947,948,949,960,961,964",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "32798,55656,55703,55750,56494,56539,56705",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "32835,55698,55745,55792,56534,56579,56742"
                     }
                 }
             ]
