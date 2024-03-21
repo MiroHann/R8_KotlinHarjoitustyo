@@ -12,6 +12,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -29,19 +30,36 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Button
+import androidx.compose.material3.Divider
+import androidx.compose.material3.DrawerValue
+import androidx.compose.material3.ExtendedFloatingActionButton
+import androidx.compose.material3.FabPosition
+import androidx.compose.material3.Icon
+import androidx.compose.material3.ModalDrawerSheet
+import androidx.compose.material3.ModalNavigationDrawer
+import androidx.compose.material3.NavigationDrawerItem
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
 import com.example.apiparser.ui.theme.APIParserTheme
+import kotlinx.coroutines.launch
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -54,7 +72,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    RecipeList()
+                    NavDrawer()
                 }
             }
         }
@@ -71,9 +89,9 @@ class MainActivity : ComponentActivity() {
         println(Content)
         startActivity(intent)
     }
-    @Preview
+
     @Composable
-    fun RecipeList(modifier: Modifier = Modifier) {
+    fun RecipeList(modifier: Modifier = Modifier, contentPadding: PaddingValues) {
 
         val (cuisineType, setCuisineType) = remember { mutableStateOf("Nordic") }
 
@@ -83,8 +101,8 @@ class MainActivity : ComponentActivity() {
         LaunchedEffect(cuisineType) {
             try {
                 val response = service.getRecipes(
-                    appId = "7a7668fb",
-                    appKey = "5dedd41ca0ac7b45881b37db8ae94423",
+                    appId = "",
+                    appKey = "",
                     cuisineType = cuisineType,
                     imageSize = "REGULAR"
                 )
@@ -97,6 +115,7 @@ class MainActivity : ComponentActivity() {
 
         LazyColumn(
             modifier = modifier.fillMaxSize(),
+            contentPadding = contentPadding,
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -108,7 +127,15 @@ class MainActivity : ComponentActivity() {
                         Image(
                             painter = rememberImagePainter(data = recipe.image),
                             contentDescription = "Recipe Image",
-                            modifier = Modifier.size(width = 370.dp, height = 300.dp).clickable { TempRecipepage(recipe.image, recipe.label,recipe.ingredientLines)  },
+                            modifier = Modifier
+                                .size(width = 370.dp, height = 300.dp)
+                                .clickable {
+                                    TempRecipepage(
+                                        recipe.image,
+                                        recipe.label,
+                                        recipe.ingredientLines
+                                    )
+                                },
                             contentScale = ContentScale.Crop,
                         )
                     Text(
@@ -178,6 +205,86 @@ class MainActivity : ComponentActivity() {
                 )
             }
 
+        }
+    }
+
+    @Composable
+    @Preview
+    fun NavDrawer(modifier: Modifier = Modifier) {
+        val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
+        var currentScreen by remember { mutableStateOf(1) }
+        val scope = rememberCoroutineScope()
+        ModalNavigationDrawer(
+            drawerState = drawerState,
+            drawerContent = {
+                ModalDrawerSheet {
+                    Column (
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(vertical = 16.dp),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                    ) {
+                        Divider()
+                        NavigationDrawerItem(
+                            label = { Text(
+                                text = "Home",
+                                textAlign = TextAlign.Center,
+                                modifier = Modifier.fillMaxWidth()
+                            )
+                            },
+                            selected = false,
+                            onClick = {
+                                currentScreen = 1
+                                scope.launch {
+                                    drawerState.close()
+                                }
+                            },
+                        )
+                        Divider()
+                        NavigationDrawerItem(
+                            label = { Text(
+                                text = "Saved",
+                                textAlign = TextAlign.Center,
+                                modifier = Modifier.fillMaxWidth()
+                            )
+                            },
+                            selected = false,
+                            onClick = {
+                                currentScreen = 2
+                                scope.launch {
+                                    drawerState.close()
+                                }
+                            }
+                        )
+                        Divider()
+                    }
+                }
+            },
+        ) {
+            Scaffold(
+                floatingActionButton = {
+                    ExtendedFloatingActionButton(
+                        text = { Text("Show drawer") },
+                        icon = { Icon(Icons.Filled.Add, contentDescription = "") },
+                        onClick = {
+                            scope.launch {
+                                drawerState.apply {
+                                    if (isClosed) open() else close()
+                                }
+                            }
+                        }
+                    )
+                },
+                floatingActionButtonPosition = FabPosition.End
+            ) { contentPadding ->
+                // Screen content
+                if (currentScreen == 1) {
+                    RecipeList(modifier = modifier, contentPadding = contentPadding)
+                } else if (currentScreen == 2) {
+                    // Saved screen here
+                }
+            }
         }
     }
 }
