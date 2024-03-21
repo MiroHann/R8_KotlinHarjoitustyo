@@ -53,9 +53,9 @@ com.example.apiparser.app-emoji2-views-helper-1.4.0-51 C:\Users\Omistaja\.gradle
 com.example.apiparser.app-activity-compose-1.8.2-52 C:\Users\Omistaja\.gradle\caches\transforms-3\f784e701c263bd45973b1e7ff36c4d92\transformed\activity-compose-1.8.2\res
 com.example.apiparser.app-savedstate-ktx-1.2.1-53 C:\Users\Omistaja\.gradle\caches\transforms-3\fc797c232a6222823daa1cf827072829\transformed\savedstate-ktx-1.2.1\res
 com.example.apiparser.app-animation-release-54 C:\Users\Omistaja\.gradle\caches\transforms-3\fccf91b9df1389bed5cd7a510cb6829a\transformed\animation-release\res
-com.example.apiparser.app-resValues-55 C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\build\generated\res\resValues\debug
-com.example.apiparser.app-packageDebugResources-56 C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.apiparser.app-packageDebugResources-57 C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.apiparser.app-merged_res-58 C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\build\intermediates\merged_res\debug
-com.example.apiparser.app-debug-59 C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\debug\res
-com.example.apiparser.app-main-60 C:\Users\Omistaja\Documents\Kotlin Project\R8_KotlinHarjoitustyo\app\src\main\res
+com.example.apiparser.app-resValues-55 C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\build\generated\res\resValues\debug
+com.example.apiparser.app-packageDebugResources-56 C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.apiparser.app-packageDebugResources-57 C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.apiparser.app-merged_res-58 C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\build\intermediates\merged_res\debug
+com.example.apiparser.app-debug-59 C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\debug\res
+com.example.apiparser.app-main-60 C:\Users\Omistaja\Documents\Kotlin Project\Temp\R8_KotlinHarjoitustyo\app\src\main\res
