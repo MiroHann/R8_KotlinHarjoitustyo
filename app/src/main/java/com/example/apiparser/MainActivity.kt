@@ -44,10 +44,12 @@ import androidx.compose.material3.NavigationDrawerItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -125,7 +127,15 @@ class MainActivity : ComponentActivity() {
                         Image(
                             painter = rememberImagePainter(data = recipe.image),
                             contentDescription = "Recipe Image",
-                            modifier = Modifier.size(width = 370.dp, height = 300.dp).clickable { TempRecipepage(recipe.image, recipe.label,recipe.ingredientLines)  },
+                            modifier = Modifier
+                                .size(width = 370.dp, height = 300.dp)
+                                .clickable {
+                                    TempRecipepage(
+                                        recipe.image,
+                                        recipe.label,
+                                        recipe.ingredientLines
+                                    )
+                                },
                             contentScale = ContentScale.Crop,
                         )
                     Text(
@@ -202,23 +212,52 @@ class MainActivity : ComponentActivity() {
     @Preview
     fun NavDrawer(modifier: Modifier = Modifier) {
         val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
+        var currentScreen by remember { mutableStateOf(1) }
         val scope = rememberCoroutineScope()
         ModalNavigationDrawer(
             drawerState = drawerState,
             drawerContent = {
                 ModalDrawerSheet {
-                    Column ( verticalArrangement = Arrangement.Center ) {
+                    Column (
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(vertical = 16.dp),
+                        verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                    ) {
+                        Divider()
                         NavigationDrawerItem(
-                            label = { Text(text = "Home", textAlign = TextAlign.Center) },
+                            label = { Text(
+                                text = "Home",
+                                textAlign = TextAlign.Center,
+                                modifier = Modifier.fillMaxWidth()
+                            )
+                                    },
                             selected = false,
-                            onClick = { /*TODO*/ },
+                            onClick = {
+                                currentScreen = 1
+                                scope.launch {
+                                    drawerState.close()
+                                }
+                                      },
                         )
                         Divider()
                         NavigationDrawerItem(
-                            label = { Text(text = "Saved", textAlign = TextAlign.Center)  },
+                            label = { Text(
+                                text = "Saved",
+                                textAlign = TextAlign.Center,
+                                modifier = Modifier.fillMaxWidth()
+                            )
+                                    },
                             selected = false,
-                            onClick = { /*TODO*/ }
+                            onClick = {
+                                currentScreen = 2
+                                scope.launch {
+                                    drawerState.close()
+                                }
+                            }
                         )
+                        Divider()
                     }
                 }
             },
@@ -237,10 +276,14 @@ class MainActivity : ComponentActivity() {
                         }
                     )
                 },
-                floatingActionButtonPosition = FabPosition.End, // Positioning the FAB in the top right corner
+                floatingActionButtonPosition = FabPosition.End
             ) { contentPadding ->
                 // Screen content
-                RecipeList(modifier = modifier, contentPadding = contentPadding)
+                if (currentScreen == 1) {
+                    RecipeList(modifier = modifier, contentPadding = contentPadding)
+                } else if (currentScreen == 2) {
+                    // Saved screen here
+                }
             }
         }
     }
