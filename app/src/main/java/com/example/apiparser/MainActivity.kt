@@ -9,6 +9,7 @@ import okhttp3.Request
 import android.util.Log
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -33,6 +34,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExtendedFloatingActionButton
@@ -52,6 +54,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.modifier.modifierLocalMapOf
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -62,6 +65,7 @@ import com.example.apiparser.ui.theme.APIParserTheme
 import kotlinx.coroutines.launch
 import org.json.JSONArray
 import org.json.JSONObject
+import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,11 +98,12 @@ class MainActivity : ComponentActivity() {
     fun RecipeList(modifier: Modifier = Modifier, contentPadding: PaddingValues) {
 
         val (cuisineType, setCuisineType) = remember { mutableStateOf("Nordic") }
+        val (sortedAlphabetically, setSortedAlphabetically) = remember { mutableStateOf(false) }
 
         val service = remember { createRecipeService() }
         val recipes = remember { mutableStateListOf<Recipe>() }
 
-        LaunchedEffect(cuisineType) {
+        LaunchedEffect(cuisineType, sortedAlphabetically) {
             try {
                 val response = service.getRecipes(
                     appId = "",
@@ -108,6 +113,12 @@ class MainActivity : ComponentActivity() {
                 )
                 recipes.clear()
                 recipes.addAll(response.hits.map { it.recipe })
+
+                if (sortedAlphabetically) {
+                    recipes.sortBy { it.label }
+                } else {
+                    recipes.sortByDescending { it.label }
+                }
             } catch (e: Exception) {
                 Log.e("API_ERROR", "Failed to fetch recipes", e)
             }
@@ -204,7 +215,25 @@ class MainActivity : ComponentActivity() {
                         .size(width = 100.dp, height = 45.dp)
                 )
             }
-
+        }
+        Box(
+            modifier = modifier.fillMaxSize(),
+            contentAlignment = Alignment.BottomStart,
+        ) {
+            Button(
+                onClick = { setSortedAlphabetically(!sortedAlphabetically) },
+                modifier = Modifier.padding(16.dp),
+                contentPadding = PaddingValues(0.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.secondaryContainer,
+                    contentColor = MaterialTheme.colorScheme.secondary
+                )
+            ) {
+                Text(
+                    text = if (sortedAlphabetically) "Sort Z -> A" else "Sort A -> Z", color = Color.White,
+                    modifier = Modifier.padding(8.dp)
+                )
+            }
         }
     }
 
@@ -265,15 +294,17 @@ class MainActivity : ComponentActivity() {
             Scaffold(
                 floatingActionButton = {
                     ExtendedFloatingActionButton(
-                        text = { Text("Show drawer") },
-                        icon = { Icon(Icons.Filled.Add, contentDescription = "") },
+                        text = { Text("Show drawer", color = Color.White) },
+                        icon = { Icon(Icons.Filled.Add, contentDescription = "", tint = Color.White) },
                         onClick = {
                             scope.launch {
                                 drawerState.apply {
                                     if (isClosed) open() else close()
                                 }
                             }
-                        }
+                        },
+                        containerColor = MaterialTheme.colorScheme.secondaryContainer,
+                        contentColor = MaterialTheme.colorScheme.secondary
                     )
                 },
                 floatingActionButtonPosition = FabPosition.End
