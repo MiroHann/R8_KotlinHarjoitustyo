@@ -4,7 +4,7 @@
             "outputFile": "com.example.apiparser.app-mergeDebugResources-57:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Isku\\.gradle\\caches\\transforms-3\\6bca9e0c29e47b0cd16ec1e12d62807a\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\6bca9e0c29e47b0cd16ec1e12d62807a\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
