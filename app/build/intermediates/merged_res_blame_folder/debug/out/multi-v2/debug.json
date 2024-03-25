@@ -6310,23 +6310,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\Temp\\R8\\temp2\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "17,65",
-                        "endColumns": "46,43",
-                        "endOffsets": "59,104"
-                    },
-                    "to": {
-                        "startLines": "1982,2176",
-                        "startColumns": "4,4",
-                        "startOffsets": "131128,154319",
-                        "endColumns": "46,43",
-                        "endOffsets": "131170,154358"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\e79b63385d19c0a6e75e79999c71455a\\transformed\\drawerlayout-1.1.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -6401,6 +6384,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\Not So temporary\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "86",
+                        "endOffsets": "139"
+                    },
+                    "to": {
+                        "startLines": "6427",
+                        "startColumns": "4",
+                        "startOffsets": "449194",
+                        "endColumns": "85",
+                        "endOffsets": "449275"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\cb3673b3839b0aab416c9e5bde28ae2e\\transformed\\coordinatorlayout-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,6,16",
@@ -6454,6 +6454,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\Not So temporary\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "293,57,105,153,201,247,336",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "330,99,147,195,241,287,373"
+                    },
+                    "to": {
+                        "startLines": "640,947,948,949,960,961,964",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "32798,55656,55703,55750,56494,56539,56705",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "32835,55698,55745,55792,56534,56579,56742"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\b749fb052c6f770b951ce74b2ff808e9\\transformed\\transition-1.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -6502,6 +6519,23 @@
                         "startOffsets": "120681,121829",
                         "endColumns": "53,66",
                         "endOffsets": "120730,121891"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\Not So temporary\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "17,65",
+                        "endColumns": "46,43",
+                        "endOffsets": "59,104"
+                    },
+                    "to": {
+                        "startLines": "1982,2176",
+                        "startColumns": "4,4",
+                        "startOffsets": "131128,154319",
+                        "endColumns": "46,43",
+                        "endOffsets": "131170,154358"
                     }
                 },
                 {
@@ -6617,23 +6651,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\Temp\\R8\\temp2\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "7,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "293,57,105,153,201,247,336",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "330,99,147,195,241,287,373"
-                    },
-                    "to": {
-                        "startLines": "640,947,948,949,960,961,964",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "32798,55656,55703,55750,56494,56539,56705",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "32835,55698,55745,55792,56534,56579,56742"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\c8182d16d4687a5d99f0eaa3a9833899\\transformed\\activity-1.8.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3",
@@ -6648,23 +6665,6 @@
                         "startOffsets": "121992,124062",
                         "endColumns": "41,59",
                         "endOffsets": "122029,124117"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Omistaja\\Documents\\Kotlin Project\\Temp\\R8\\temp2\\R8_KotlinHarjoitustyo\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "86",
-                        "endOffsets": "139"
-                    },
-                    "to": {
-                        "startLines": "6427",
-                        "startColumns": "4",
-                        "startOffsets": "449194",
-                        "endColumns": "85",
-                        "endOffsets": "449275"
                     }
                 },
                 {
