@@ -4,7 +4,24 @@
             "outputFile": "com.example.apiparser.app-mergeDebugResources-57:/values-iw/values-iw.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\6bca9e0c29e47b0cd16ec1e12d62807a\\transformed\\appcompat-1.6.1\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\Isku\\.gradle\\caches\\transforms-3\\7e0de00efec8260dc761d11f7167e95b\\transformed\\core-1.12.0\\res\\values-iw\\values-iw.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,149,251,348,445,546,646,752",
+                        "endColumns": "93,101,96,96,100,99,105,100",
+                        "endOffsets": "144,246,343,440,541,641,747,848"
+                    },
+                    "to": {
+                        "startLines": "43,44,45,46,47,48,49,164",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3887,3981,4083,4180,4277,4378,4478,14432",
+                        "endColumns": "93,101,96,96,100,99,105,100",
+                        "endOffsets": "3976,4078,4175,4272,4373,4473,4579,14528"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Isku\\.gradle\\caches\\transforms-3\\6bca9e0c29e47b0cd16ec1e12d62807a\\transformed\\appcompat-1.6.1\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\97b5f65a1b4ff7e43bfb8ef22d97431a\\transformed\\material3-1.1.1\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\Isku\\.gradle\\caches\\transforms-3\\97b5f65a1b4ff7e43bfb8ef22d97431a\\transformed\\material3-1.1.1\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\56991579657abc1bbffec6207af617d3\\transformed\\ui-release\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\Isku\\.gradle\\caches\\transforms-3\\56991579657abc1bbffec6207af617d3\\transformed\\ui-release\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\c0b6233df693ffa1cebbe0cb3bc97948\\transformed\\material-1.11.0\\res\\values-iw\\values-iw.xml",
+                    "source": "C:\\Users\\Isku\\.gradle\\caches\\transforms-3\\c0b6233df693ffa1cebbe0cb3bc97948\\transformed\\material-1.11.0\\res\\values-iw\\values-iw.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -71,23 +88,6 @@
                         "endLines": "6,38,39,40,41,42,50,51,52,91,93,94,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,157",
                         "endColumns": "12,76,74,76,99,90,92,112,79,64,87,69,62,91,62,59,58,62,60,53,101,56,58,53,67,110,80,81,131,70,72,123,87,75,52,53,65,72,75,85,77,69,74,81,67,100,84,69,89,90,73,72,88,50,80,66,81,84,61,63,62,67,93,94,89,96,56,57,74",
                         "endOffsets": "356,3539,3614,3691,3791,3882,4672,4785,4865,8927,9088,9158,9383,9475,9538,9598,9657,9720,9781,9835,9937,9994,10053,10107,10175,10286,10367,10449,10581,10652,10725,10849,10937,11013,11066,11120,11186,11259,11335,11421,11499,11569,11644,11726,11794,11895,11980,12050,12140,12231,12305,12378,12467,12518,12599,12666,12748,12833,12895,12959,13022,13090,13184,13279,13369,13466,13523,13581,13953"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Omistaja\\.gradle\\caches\\transforms-3\\7e0de00efec8260dc761d11f7167e95b\\transformed\\core-1.12.0\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,149,251,348,445,546,646,752",
-                        "endColumns": "93,101,96,96,100,99,105,100",
-                        "endOffsets": "144,246,343,440,541,641,747,848"
-                    },
-                    "to": {
-                        "startLines": "43,44,45,46,47,48,49,164",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3887,3981,4083,4180,4277,4378,4478,14432",
-                        "endColumns": "93,101,96,96,100,99,105,100",
-                        "endOffsets": "3976,4078,4175,4272,4373,4473,4579,14528"
                     }
                 }
             ]
