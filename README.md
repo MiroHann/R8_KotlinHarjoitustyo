@@ -13,6 +13,7 @@ ___
 Kuva Amerikkalaisesta suodatuksesta!
 
 <img src="/readmeresources/American.png" width="300" height="500">
+
 ___
 Kuva Britti suodatuksesta!
 
