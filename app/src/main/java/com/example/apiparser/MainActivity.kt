@@ -108,8 +108,8 @@ class MainActivity : ComponentActivity() {
         LaunchedEffect(cuisineType, sortedAlphabetically) {
             try {
                 val response = service.getRecipes(
-                    appId = "7a7668fb",
-                    appKey = "5dedd41ca0ac7b45881b37db8ae94423",
+                    appId = "",
+                    appKey = "",
                     cuisineType = cuisineType,
                     imageSize = "REGULAR"
                 )
