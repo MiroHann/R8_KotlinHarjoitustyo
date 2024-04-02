@@ -1,9 +1,9 @@
-#Mon Mar 25 20:46:19 EET 2024
-base.0=E\:\\oamk\\kevat_2024\\Projekti\\MAIN3\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=E\:\\oamk\\kevat_2024\\Projekti\\MAIN3\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=E\:\\oamk\\kevat_2024\\Projekti\\MAIN3\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.3=E\:\\oamk\\kevat_2024\\Projekti\\MAIN3\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.4=E\:\\oamk\\kevat_2024\\Projekti\\MAIN3\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Tue Apr 02 00:58:28 EEST 2024
+base.0=C\:\\Users\\noel5\\Documents\\GitHub\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\noel5\\Documents\\GitHub\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\noel5\\Documents\\GitHub\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.3=C\:\\Users\\noel5\\Documents\\GitHub\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.4=C\:\\Users\\noel5\\Documents\\GitHub\\R8_KotlinHarjoitustyo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=15/classes.dex
