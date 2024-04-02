@@ -16,13 +16,13 @@ Kuva Amerikkalaisesta suodatuksesta!
 ___
 Kuva Britti suodatuksesta!
 
-![Kuva Britti suodatuksesta](/readmeresources/Brittish.png "Britti suodatus").
+<img src="/readmeresources/Brittish.png" width="300" height="500">
 
 # 2. Reseptisivu
 
 Reseptisivu taas nayttaa tarkempaa tietoa painetusta reseptista. Talla sivulla voi myos tallentaa valitun reseptin puhelimen muistiin. 
 
-![Resepti sivusta](/readmeresources/Recipe.png "Reseptisivu").
+<img src="/readmeresources/Recipe.png" width="300" height="500">
 
 # 3. Tallennukset
 
@@ -31,9 +31,9 @@ Edelta mainusta tallennus napista painaessa tallentuu resepti muistiin jolloin s
 ___
 Kuva navigaatiosta !
 
-![Navigaatio sivu](/readmeresources/Navigation.png "Navigaatio").
+<img src="/readmeresources/Navigation.png" width="300" height="500">
 
 ___
 Kuva tallennettujen reseptejen listasta !
 
-![Tallenetut sivu](/readmeresources/SavedRecipes.png "Tallennetut").
+<img src="/readmeresources/SavedRecipes.png" width="300" height="500">
