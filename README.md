@@ -12,7 +12,7 @@ Etusivulla kayttaja pystyy suodattamaan reseptejä painamalla lippuja ja suodatt
 ___
 Kuva Amerikkalaisesta suodatuksesta!
 
-<img src="/readmeresources/American.png" width="300" height="400">
+<img src="/readmeresources/American.png" width="300" height="500">
 ___
 Kuva Britti suodatuksesta!
 
